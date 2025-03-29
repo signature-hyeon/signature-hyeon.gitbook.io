@@ -1,5 +1,5 @@
 ---
-description: 개발하면서 알게된 작은 지식을 기록하고 공유하는 공간입니다. test
+description: 개발하면서 알게된 작은 지식을 기록하고 공유하는 공간입니다.
 ---
 
 # Intro
@@ -9,8 +9,6 @@ description: 개발하면서 알게된 작은 지식을 기록하고 공유하�
 ### 😎 Contact <a href="#contact" id="contact"></a>
 
 **Email**. [azure294@gmail.com](mailto:azure294@gmail.com)
-
-#### test
 
 ### 👨‍💻 Channel <a href="#channel" id="channel"></a>
 
