@@ -4,5 +4,10 @@
 
 ## TECH
 
-* [DATABASE](tech/database/README.md)
-  * [Elasticsearch](tech/database/elasticsearch.md)
+* [DATABASE](tech/database.md)
+
+## STUDY
+
+* [ELASTICSEARCH](study/elasticsearch/README.md)
+  * [Elasticsearch 란?](study/elasticsearch/elasticsearch.md)
+  * [색인과 검색 원리](study/elasticsearch/undefined.md)

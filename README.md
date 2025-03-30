@@ -12,6 +12,6 @@ description: 개발하면서 알게된 작은 지식을 기록하고 공유하�
 
 ### 👨‍💻 Channel <a href="#channel" id="channel"></a>
 
-**Blog**. [https://signature-hyeon.gitbook.io/sa46lll](https://signature-hyeon.gitbook.io/sa46lll)
+**Blog**. [https://signature-hyeon.gitbook.io/docs](https://signature-hyeon.gitbook.io/docs)
 
-**Github.**[ ](https://github.com/sa46lll)[https://github.com/sa46lll](https://github.com/sa46lll)
+**Github.**[ ](https://github.com/sa46lll)[https://github.com/signature-hyeon](https://github.com/signature-hyeon)
