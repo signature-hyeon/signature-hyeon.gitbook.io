@@ -1,14 +1,35 @@
 ---
-description: Elasticsearch 색인과 검색 원리에 대해 알아보자.
+description: Elasticsearch는 어떻게 빠르게 검색할 수 있을까?
 ---
 
 # 색인과 검색 원리
 
 ## 색인이란?
 
-### 색인이 중요한 이유
+Elasticsearch는 데이터를 저장할 때 **색인**한다고 표현한다. 이 때 역 색(inverted index)라는 구조에 저장한다. 역 인덱스에 대해 알아보자!
+
+### 역색인이란? (inverted index)
+
+단어 기준으로 문서를 찾기 쉽게 미리 색인을 만들어 놓은 구조이다. '어떤 단어가 어떤 문서에 등장하는가'를 빠르게 찾기 위해 만들어졌다.  예를 들어, 단어 -> 문서 ID 목록 이런 식으로 미리 색인을 만들어둬서 특정 단어가 포함된 문서를 빠르게 찾을 수 있다.
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ## 어떻게 빠르게 검색할 수 있을까?
+
+Elasticsearch는 역색인 구조로 저장하는 과정을 통해 빠르게 검색할 수 있다. 이때 내부적으로 텍스트 분석 과정을 거쳐 저장한다.
+
+Elasticsearch에서 텍스트가 저장될 때 다음과 같은 과정을 거친다.
+
+1. Tokenizer
+2. Normalization
+   1. 소문자 변환 (Quick -> quick)
+   2. 어근 추출 (foxes -> fox)
+   3. 동의어 처리 (jump, leap -> jump)
+3. 역색인
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+이처럼 Elasticsearch는 문장을 토큰화하고 불필요한 정보를 정제한 뒤, 역색인 구조로 저장함으로써 방대한 데이터 속에서도 원하는 정보를 빠르게 찾아낼 수 있다.
 
 
 
