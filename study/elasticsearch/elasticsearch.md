@@ -2,13 +2,13 @@
 description: Elasticsearch에 대해 알아보자
 ---
 
-# Elasticsearch
+# Elasticsearch 란?
 
 ## Elasticsearch 란?
 
 Apache Lucene 기반으로 한 무료 검색 및 분석 엔진이다. ELK 스택에서 저장, 분석을 담당하고 있다.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### ELK 스택이란?
 

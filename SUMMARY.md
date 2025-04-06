@@ -4,7 +4,8 @@
 
 ## TECH
 
-* [DATABASE](tech/database.md)
+* [DATABASE](tech/database/README.md)
+  * [MongoDB](tech/database/mongodb.md)
 
 ## STUDY
 
