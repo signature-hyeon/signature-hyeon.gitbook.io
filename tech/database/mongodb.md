@@ -83,5 +83,5 @@ RDBMS는 기본적으로 수직 확장을 전제로 설계되어 있기 때문�
 
 ## 참고
 
+* [https://www.mongodb.com/docs/manual/](https://www.mongodb.com/docs/manual/)
 * [https://www.mongodb.com/resources/basics/json-and-bson](https://www.mongodb.com/resources/basics/json-and-bson)
-*
