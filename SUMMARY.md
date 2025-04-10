@@ -6,6 +6,8 @@
 
 * [DATABASE](tech/database/README.md)
   * [MongoDB](tech/database/mongodb.md)
+* [DEVOPS](tech/devops/README.md)
+  * [배포 전략 (Rolling, Blue/Green, Canary)](tech/devops/rolling-blue-green-canary.md)
 
 ## STUDY
 
