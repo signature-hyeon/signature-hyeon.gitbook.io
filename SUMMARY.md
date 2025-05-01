@@ -16,3 +16,5 @@
 * [ELASTICSEARCH](study/elasticsearch/README.md)
   * [Elasticsearch 란?](study/elasticsearch/elasticsearch.md)
   * [색인과 검색 원리](study/elasticsearch/undefined.md)
+* [클린 코드](study/undefined/README.md)
+  * [3장 함수](study/undefined/3.md)
