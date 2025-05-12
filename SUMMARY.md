@@ -18,3 +18,5 @@
   * [색인과 검색 원리](study/elasticsearch/undefined.md)
 * [클린 코드](study/undefined/README.md)
   * [3장 함수](study/undefined/3.md)
+* [친절한 SQL 튜닝](study/sql/README.md)
+  * [1장 SQL 처리 과정과 I/O](study/sql/1-sql-i-o.md)
