@@ -30,9 +30,7 @@ DBMS 내에서 DBMS 내에서 SQL을 분석하고, 실행 가능한 최적의 �
 
 **AUTOTRACE**
 
-Oracle은 AUTOTRACE를 통해 확인할 수 있다.
-
-Cost는 쿼리를 수행하는 동안 발생할 것으로 예상하는 I/O 횟수 또는 예상 소요 시간을 표현한다. 이 값은 어디까지나 예상치이므로 실제로 발생하는 I/O, 시간과 많은 차이가 날 수 있다.
+Oracle은 AUTOTRACE를 통해 확인할 수 있다. Cost는 쿼리를 수행하는 동안 발생할 것으로 예상하는 I/O 횟수 또는 예상 소요 시간을 표현한다. 이 값은 어디까지나 예상치이므로 실제로 발생하는 I/O, 시간과 많은 차이가 날 수 있다.
 
 ```sql
 SQL> SET AUTOTRACE TRACEONLY EXPLAIN;
@@ -51,9 +49,7 @@ WHERE deptno = 10 AND no = 1;
 
 **옵티마이저 힌트**
 
-옵티마이저가 보편적으로 좋은 쿼리를 선택하지만, 항상 최선은 아닐 수 있다.
-
-이럴 때 옵티마이저 힌트를 이용해 특정 인덱스를 선택하도록 데이터 액세스 경로를 바꿀 수 있다.
+옵티마이저는 보통 효율적인 실행 계획을 선택하지만, 항상 최선이라고 보장할 수는 없다. 이럴 때는 **옵티마이저 힌트**를 사용해 특정 인덱스를 선택해 데이터 액세스 경로를 바꿀 수 있다. 쿼리가 시스템에서 중요한 역할을 한다면, 힌트를 통해 실행 계획을 직접 제어해보는 것도 좋은 방법이다.
 
 ```sql
 SELECT **/*+ index(t t_x02) */** 
@@ -62,13 +58,40 @@ FROM 고객 A
 WHERE 고객ID = 10;
 ```
 
-MySQL은 Explain, Explain analyze 을 사용할 수 있다.
-
 ## 2. SQL 공유 및 재사용
 
 ### 라이브러리 캐시
 
-사용자가 SQL 문을 입력하면 SQL, 최적화, 로우 소스 생성 과정을 거쳐 실행 계획과 관련된 결과를 메모리에 저장한다. 옵티마이저의 최적화 과정에서 많은 연산을 필요로 하기 때문이다.
+사용자가 SQL 문을 입력하면, SQL 파싱, 최적화, 로우 소스 생성 과정을 거쳐 실행 계획과 관련된 정보가 메모리에 저장된다. 이는 옵티마이저의 최적화 과정에서 많은 연산이 필요하기 때문에, 동일한 SQL에 대해 반복적인 작업을 줄이기 위함이다.
+
+* **소프트 파싱**: SQL 문이 라이브러리 캐시에 존재할 경우, 파싱과 최적화 과정을 생략하고 곧바로 실행 단계로 넘어간다.
+* **하드 파싱**: SQL 문이 캐시에 없을 경우, 파싱부터 최적화, 로우 소스 생성까지 모든 단계를 새로 수행한다.
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
+### 바인드 변수
+
+**SQL 문제**
+
+SQL은 이름이 없고, 텍스트 자체가 이름 역할을 한다. 그래서 텍스트 중 작은 부분이라도 수정되면 다른 객체가 새로 탄생하는 구조이다.
+
+라이브러리 캐시는 SQL 텍스트 자체를 키 값으로 사용하므로 의미적으로는 모두 같다고 해도, 실행할 때 각각 최적화를 진행한다.
+
+```sql
+SELECT * FROM emp WHERE empno = 100;
+select * from EMP where EMPNO = 100;
+select * from emp where empno = 100;
+```
+
+<pre class="language-sql"><code class="lang-sql"><strong>SELECT * FROM CUSTOMER WHERE LOGIN_ID = 'hyeon';
+</strong>SELECT * FROM CUSTOMER WHERE LOGIN_ID = 'minsoo';
+SELECT * FROM CUSTOMER WHERE LOGIN_ID = 'signature';
+</code></pre>
+
+**바인드 변수**
+
+바인드 변수는 파라미터 Driven 방식으로 SQL을 작성하도록 한다. 하드파싱은 최초 한번만 일어나고, 캐싱된 SQL은 많은 고객이 공유하면서 재사용한다.
+
+```sql
+SELECT * FROM CUSTOMER WHERE LOGIN_ID = :1;
+```
