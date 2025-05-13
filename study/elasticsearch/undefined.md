@@ -12,7 +12,7 @@ Elasticsearch는 데이터를 저장할 때 **색인**한다고 표현한다. �
 
 단어 기준으로 문서를 찾기 쉽게 미리 색인을 만들어 놓은 구조이다. '어떤 단어가 어떤 문서에 등장하는가'를 빠르게 찾기 위해 만들어졌다. 예를 들어, 단어 -> 문서 ID 목록 이런 식으로 미리 색인을 만들어둬서 특정 단어가 포함된 문서를 빠르게 찾을 수 있다.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## 어떻게 빠르게 검색할 수 있을까?
 
