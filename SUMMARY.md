@@ -21,3 +21,4 @@
 * [친절한 SQL 튜닝](study/sql/README.md)
   * [1장 SQL 처리 과정과 I/O](study/sql/1-sql-i-o.md)
   * [2장 인덱스 기본](study/sql/2.md)
+  * [3.3장 인덱스 스캔 효율화](study/sql/3.3.md)
