@@ -9,7 +9,7 @@
 * [DEVOPS](tech/devops/README.md)
   * [배포 전략 (Rolling, Blue/Green, Canary)](tech/devops/rolling-blue-green-canary.md)
 * [BACKEND](tech/backend/README.md)
-  * [대용량 데이터, 어떻게 처리하고 계신가요?](tech/backend/undefined.md)
+  * [“왜 이렇게 느려?”를 마주했을 때](tech/backend/undefined.md)
 
 ## STUDY
 
