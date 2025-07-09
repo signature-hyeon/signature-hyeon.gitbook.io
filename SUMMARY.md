@@ -25,4 +25,4 @@
   * [4.2장 소트 머지 조인](study/sql/4.2.md)
   * [4.3장 해시 조인](study/sql/4.3.md)
   * [5장 소트 튜닝](study/sql/5.md)
-  * [5.4장 Sort Area를 적게 사용하도록 SQL 작성](study/sql/5.4-sort-area-sql.md)
+  * [5.4장 Sort Area 효율적으로 쓰는 SQL 작성법](study/sql/5.4-sort-area-sql.md)
