@@ -260,3 +260,10 @@ cb.getState(); // 현재 상태
 * 장애 대응 과정에서 Fallback으로 대체된 경우도 로그로 추적해야 한다
 
 모니터링이 없다면 서킷 브레이커는 그냥 호출이 안 되는 이유를 모르는 블랙박스가 된다.
+
+
+
+&#x20;아직 감이 안온다면 다음 예시로 확인해보자.
+
+* [https://github.com/signature-hyeon/resilience4j-circuitbreaker](https://github.com/signature-hyeon/resilience4j-circuitbreaker)
+* [https://github.com/resilience4j/resilience4j](https://github.com/resilience4j/resilience4j) > resilience4j-circuitbreaker
