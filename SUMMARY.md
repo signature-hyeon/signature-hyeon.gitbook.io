@@ -10,6 +10,7 @@
   * [배포 전략 (Rolling, Blue/Green, Canary)](tech/devops/rolling-blue-green-canary.md)
 * [BACKEND](tech/backend/README.md)
   * [“왜 이렇게 느려?”를 마주했을 때](tech/backend/undefined.md)
+  * [Resilience4j CircuitBreaker](tech/backend/resilience4j-circuitbreaker.md)
 
 ## STUDY
 
