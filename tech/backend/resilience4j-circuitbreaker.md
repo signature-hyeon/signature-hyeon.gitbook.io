@@ -16,9 +16,7 @@ description: Resilience4j CircuitBreaker에 대해
 
 **🧯 그래서 Circuit Breaker가 필요하다**
 
-서킷 브레이커는 실패가 일정 기준을 넘으면 해당 요청을 일시적으로 끊는다.
-
-바로 재시도하지 않고, 잠깐 기다렸다가 상태가 괜찮아지면 다시 연결을 시도한다.
+서킷 브레이커는 실패가 일정 기준을 넘으면 해당 요청을 일시적으로 끊는다. 바로 재시도하지 않고, 잠깐 기다렸다가 상태가 괜찮아지면 다시 연결을 시도한다.
 
 즉,
 
@@ -235,7 +233,6 @@ management:
 * [http://localhost:8080/actuator/health](http://localhost:8080/actuator/health)
 * [http://localhost:8080/actuator/metrics](http://localhost:8080/actuator/metrics)
 * [http://localhost:8080/actuator/metrics/resilience4j.circuitbreaker.state](http://localhost:8080/actuator/metrics/resilience4j.circuitbreaker.state)
-* [http://localhost:8080/actuator/metrics/resilience4j.circuitbreaker.state?tag=name:rssFetcher\&tag=state=open](http://localhost:8080/actuator/metrics/resilience4j.circuitbreaker.state?tag=name:rssFetcher\&tag=state=open)
 
 **2. Prometheus + Grafana**
 
@@ -265,5 +262,5 @@ cb.getState(); // 현재 상태
 
 &#x20;아직 감이 안온다면 다음 예시로 확인해보자.
 
-* [https://github.com/signature-hyeon/resilience4j-circuitbreaker](https://github.com/signature-hyeon/resilience4j-circuitbreaker)
-* [https://github.com/resilience4j/resilience4j](https://github.com/resilience4j/resilience4j) > resilience4j-circuitbreaker
+* 예시 코드 [https://github.com/signature-hyeon/resilience4j-circuitbreaker](https://github.com/signature-hyeon/resilience4j-circuitbreaker)
+* 공식 문서 [https://github.com/resilience4j/resilience4j](https://github.com/resilience4j/resilience4j) > resilience4j-circuitbreaker
