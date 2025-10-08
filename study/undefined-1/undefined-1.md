@@ -33,7 +33,7 @@ description: 엘라스틱서치 실무 가이드 9.3장
 
 세그먼트의 개수는 빠르게 늘어나므로, 백그라운드에서 주기적으로 세그먼트 파일을 Merge(병합)하는 작업을 수행하여 물리적으로 하나의 파일로 병합한다.
 
-![image.png](attachment:a728a0cb-520d-474d-a8c3-4e9d0d1bd80d:image.png)
+<figure><img src="../../.gitbook/assets/14.png" alt=""><figcaption></figcaption></figure>
 
 ### 세그먼트 불변성
 

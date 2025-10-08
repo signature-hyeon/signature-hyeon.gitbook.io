@@ -47,7 +47,4 @@ POST _reindex
 
 ## 참고
 
-* [https://esbook.kimjmin.net/03-cluster](https://esbook.kimjmin.net/03-cluster)
-* [https://github.com/KimDoubleB/LAB/issues/2#issuecomment-1768641192](https://github.com/KimDoubleB/LAB/issues/2#issuecomment-1768641192)
-* [https://nothing-study.tistory.com/30](https://nothing-study.tistory.com/30)
 * [https://www.elastic.co/kr/blog/how-many-shards-should-i-have-in-my-elasticsearch-cluster](https://www.elastic.co/kr/blog/how-many-shards-should-i-have-in-my-elasticsearch-cluster)

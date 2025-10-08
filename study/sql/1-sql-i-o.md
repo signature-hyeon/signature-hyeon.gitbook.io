@@ -67,7 +67,7 @@ WHERE 고객ID = 10;
 * **소프트 파싱**: SQL 문이 라이브러리 캐시에 존재할 경우, 파싱과 최적화 과정을 생략하고 곧바로 실행 단계로 넘어간다.
 * **하드 파싱**: SQL 문이 캐시에 없을 경우, 파싱부터 최적화, 로우 소스 생성까지 모든 단계를 새로 수행한다.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 바인드 변수
 
