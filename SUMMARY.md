@@ -30,4 +30,7 @@
   * [5.4장 Sort Area 효율적으로 쓰는 SQL 작성법](study/sql/5.4-sort-area-sql.md)
   * [7장 SQL 옵티마이저](study/sql/7-sql.md)
 * [엘라스틱서치 실무 가이드](study/undefined-1/README.md)
-  * [9장 엘라스틱서치 구성요소](study/undefined-1/9.md)
+  * [엘라스틱서치 구성요소](study/undefined-1/undefined.md)
+  * [엘라스틱서치가 근실시간 검색을 제공하는 이유](study/undefined-1/undefined-1.md)
+  * [고가용성을 위한 Translog](study/undefined-1/translog.md)
+  * [엘라스틱서치 샤드 최적화](study/undefined-1/undefined-2.md)
