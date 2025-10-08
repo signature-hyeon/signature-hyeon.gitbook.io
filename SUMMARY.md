@@ -19,6 +19,7 @@
   * [색인과 검색 원리](study/elasticsearch/undefined.md)
 * [클린 코드](study/undefined/README.md)
   * [3장 함수](study/undefined/3.md)
+  * [4장 주석](study/undefined/4.md)
 * [친절한 SQL 튜닝](study/sql/README.md)
   * [1장 SQL 처리 과정과 I/O](study/sql/1-sql-i-o.md)
   * [2장 인덱스 기본](study/sql/2.md)
@@ -28,3 +29,5 @@
   * [5장 소트 튜닝](study/sql/5.md)
   * [5.4장 Sort Area 효율적으로 쓰는 SQL 작성법](study/sql/5.4-sort-area-sql.md)
   * [7장 SQL 옵티마이저](study/sql/7-sql.md)
+* [엘라스틱서치 실무 가이드](study/undefined-1/README.md)
+  * [9장 엘라스틱서치 구성요소](study/undefined-1/9.md)
